@@ -1,6 +1,6 @@
 import React from 'react'
 import cars from"../api/GalleryApi"
-import CarCompo from './CarCompo'
+import CarCompo from '../components/CarCompo'
 const Gallery = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -13,7 +13,7 @@ const Gallery = () => {
        {
         cars.map((car)=>{
           return(
-            <CarCompo key={car.name} src={car.src} name={car.name} price={car.price}/>
+            <CarCompo key={car.id} car={car}/>
           )
         })
        }

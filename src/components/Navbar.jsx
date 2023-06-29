@@ -44,7 +44,7 @@ const Navbar = () => {
      {
       links.map((link)=>{
         return(
-          <Link className="mr-5 hover:text-gray-900" key={link.path} to={link.path}>{link.name}</Link>
+          <Link className="mr-5 lg:text-lg" key={link.path} to={link.path}>{link.name}</Link>
         )
       })
      }

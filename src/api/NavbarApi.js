@@ -1,5 +1,6 @@
 const links = [
     {
+        
         path:"/",
         name:"Home"
     },
@@ -19,6 +20,7 @@ const links = [
         path:"/contact",
         name:"Contact"
     },
+    
 ]
 
 export default links

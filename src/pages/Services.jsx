@@ -1,8 +1,8 @@
 import React from 'react'
-
 import services from '../api/ServiceApi'
-import ServiceCompo from './ServiceCompo'
-const Service = () => {
+import ServiceCompo from '../components/ServiceCompo'
+
+const Services = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-12 mx-auto flex flex-wrap">
@@ -18,7 +18,7 @@ const Service = () => {
                 {
                   services.map((service)=>{
                     return(
-                      <ServiceCompo key={service.title} classes={service.classes} title={service.title} desc={service.desc}/>
+                      <ServiceCompo key={service.id} service = {service}/>
                     )
                   })
                 }
@@ -38,4 +38,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default Services
